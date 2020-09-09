@@ -1,0 +1,8 @@
+lightfm
+sagemaker
+sagemaker-experiments
+numpy
+scipy
+pandas
+boto3
+joblib
