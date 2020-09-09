@@ -1,0 +1,19 @@
+<h1>Model Training has concluded successfully!</h1>
+<h3>Please review evaluation results below:</h3>
+<p><strong>Experiment: </strong>{{ experiment }}</p>
+<p><strong>Trial Name: </strong>{{ trial_name }}</p>
+<p><strong>Run Date: </strong>{{ data.run_date }}</p>
+
+<table style="height: 78px; width: 334px;" border="|">
+<tbody>
+<tr style="height: 29px;">
+<td style="width: 145px; height: 29px; text-align: center;" colspan="2"><span style="text-decoration: underline;"><strong>Evaluation Metrics</strong></span></td>
+</tr>
+{% for k,v in data.items() %}
+    <tr style="height: 29px;">
+    <td style="width: 145px; height: 29px;">{{ k }}</td>
+    <td style="width: 173px; height: 29px;">{{ v }}</td>
+    </tr>
+{% endfor %}
+</tbody>
+</table>
